@@ -51,3 +51,8 @@ PM> Install-Package System.InversionOfControl.Abstractions
 ```
 
 Just implement the `IIocContainer` interface and you are good to go.
+
+## Contributions
+
+Currently we are not accepting any contributors, but if you want to help, we would greatly appreciate feedback and bug reports. To file a bug, please use GitHub's
+issue system. Alternatively, you can clone the repository and send us a pull request.
