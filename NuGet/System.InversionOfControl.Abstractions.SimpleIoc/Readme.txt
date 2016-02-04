@@ -1,0 +1,7 @@
+﻿Simple IoC Abstractions
+=======================
+
+This is an implementation of the IoC Abstractions for Simple IoC. The IoC Abstractions represent an abstraction layer
+for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for
+dependency injection, without directly seeing the underlying API. This makes it very easy to switch between different
+IoC implementations.

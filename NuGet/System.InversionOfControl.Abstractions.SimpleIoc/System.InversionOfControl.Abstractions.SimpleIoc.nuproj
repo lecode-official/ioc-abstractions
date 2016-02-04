@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>9a6d9219-00d6-4676-8ee3-c2b24f7a5fa2</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>System.InversionOfControl.Abstractions.SimpleIoc</Id>
+    <Version>0.1.0</Version>
+    <Title>IoC Abstractions Implementation for Simple IoC</Title>
+    <Authors>David Neumann &amp; Lukas Rögner</Authors>
+    <Owners>David Neumann &amp; Lukas Rögner</Owners>
+    <Summary>An IoC Abstractions Implementation for Simple IoC.</Summary>
+    <Description>This is an implementation of the IoC Abstractions for Simple IoC. The IoC Abstractions represent an abstraction layer for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for dependency injection, without directly seeing the underlying API. This makes it very easy to switch between different IoC implementations.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>https://github.com/lecode-official/ioc-abstractions</ProjectUrl>
+    <LicenseUrl>https://raw.githubusercontent.com/lecode-official/ioc-abstractions/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright 2016 © David Neumann &amp; Lukas Rögner</Copyright>
+    <Tags>IoC, Abstraction, Inversion of Control, Dependency Injection, Simple IoC</Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.InversionOfControl.Abstractions.SimpleIoc\System.InversionOfControl.Abstractions.SimpleIoc.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
