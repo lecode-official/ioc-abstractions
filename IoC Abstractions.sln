@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.InversionOfControl.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.InversionOfControl.Abstractions.SimpleIoc", "System.InversionOfControl.Abstractions.SimpleIoc\System.InversionOfControl.Abstractions.SimpleIoc.csproj", "{6266EF48-5667-409C-93BF-54E1C6283866}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{31FFDA25-F47B-4DD3-9CF5-DCD006B45C2E}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "System.InversionOfControl.Abstractions", "NuGet\System.InversionOfControl.Abstractions\System.InversionOfControl.Abstractions.nuproj", "{366862B9-DA82-45C6-9BC8-D70873731AE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +32,15 @@ Global
 		{6266EF48-5667-409C-93BF-54E1C6283866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6266EF48-5667-409C-93BF-54E1C6283866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6266EF48-5667-409C-93BF-54E1C6283866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{366862B9-DA82-45C6-9BC8-D70873731AE4} = {31FFDA25-F47B-4DD3-9CF5-DCD006B45C2E}
 	EndGlobalSection
 EndGlobal

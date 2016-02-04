@@ -38,14 +38,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System.InversionOfControl.Abstractions\System.InversionOfControl.Abstractions.csproj">
-      <Project>{d8257265-4ef8-4bd3-b754-0032b742a83b}</Project>
-      <Name>System.InversionOfControl.Abstractions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System.InversionOfControl, Version=0.1.4.26474, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.InversionOfControl.0.1.4\lib\portable-net45+win\System.InversionOfControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.InversionOfControl.Abstractions, Version=0.1.0.27157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.InversionOfControl.Abstractions.0.1.0\lib\portable-net45+win\System.InversionOfControl.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
