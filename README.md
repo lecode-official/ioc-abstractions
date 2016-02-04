@@ -3,6 +3,7 @@
 Represents an abstraction layer for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for dependency
 injection, without directly seeing the underlying API. This makes it very easy to switch between different IoC implementations.
 
+## Acknowledgments
 
 This project would not be possible without the great contributions of the open source community. The IoC Abstractions project was build using these awesome
 open source projects:
