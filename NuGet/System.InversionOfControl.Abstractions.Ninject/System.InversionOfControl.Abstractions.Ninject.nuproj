@@ -30,6 +30,7 @@
     <LicenseUrl>https://raw.githubusercontent.com/lecode-official/ioc-abstractions/master/LICENSE</LicenseUrl>
     <Copyright>Copyright 2016 © David Neumann &amp; Lukas Rögner</Copyright>
     <Tags>IoC, Abstraction, Inversion of Control, Dependency Injection, Ninject</Tags>
+    <IconUrl>https://raw.githubusercontent.com/lecode-official/ioc-abstractions/master/Documentation/Images/Logo128x128.png</IconUrl>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />
