@@ -24,6 +24,10 @@ Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "System.InversionOfControl.A
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "System.InversionOfControl.Abstractions.SimpleIoc", "NuGet\System.InversionOfControl.Abstractions.SimpleIoc\System.InversionOfControl.Abstractions.SimpleIoc.nuproj", "{9A6D9219-00D6-4676-8EE3-C2B24F7A5FA2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{A72AF700-0A0F-4CC5-BD78-E913BA2CE9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocAbstractions.Samples.Console", "Samples\IocAbstractions.Samples.Console\IocAbstractions.Samples.Console.csproj", "{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{9A6D9219-00D6-4676-8EE3-C2B24F7A5FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A6D9219-00D6-4676-8EE3-C2B24F7A5FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6D9219-00D6-4676-8EE3-C2B24F7A5FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +70,6 @@ Global
 		{366862B9-DA82-45C6-9BC8-D70873731AE4} = {31FFDA25-F47B-4DD3-9CF5-DCD006B45C2E}
 		{BDCCC028-9DCB-4F3F-850E-2AD14004EA5E} = {31FFDA25-F47B-4DD3-9CF5-DCD006B45C2E}
 		{9A6D9219-00D6-4676-8EE3-C2B24F7A5FA2} = {31FFDA25-F47B-4DD3-9CF5-DCD006B45C2E}
+		{4AB43F60-F2FD-43E4-B33C-3927D8FFA9F2} = {A72AF700-0A0F-4CC5-BD78-E913BA2CE9CD}
 	EndGlobalSection
 EndGlobal
