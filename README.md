@@ -29,3 +29,14 @@ packagea). Just clone the Git repository, open the solution in Visual Studio, an
 ```batch
 git pull https://github.com/lecode-official/ioc-abstractions.git
 ```
+
+## Adding an implementations
+
+If you want to provide an implementation for the IoC Abstractions for an IoC container that is currently not supported, then you should install the following
+package, which is also available on NuGet https://www.nuget.org/packages/System.InversionOfControl.Abstractions/:
+
+```batch
+PM> Install-Package System.InversionOfControl.Abstractions
+```
+
+Just implement the `IIocContainer` interface and you are good to go.
