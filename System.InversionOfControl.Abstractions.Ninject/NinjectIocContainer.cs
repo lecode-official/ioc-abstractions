@@ -165,13 +165,13 @@ namespace System.InversionOfControl.Abstractions.Ninject
         public void RegisterType<T, U>(Type whenInjectedInto, bool onlyInjectExactlyInto = false, Scope scope = Scope.Transient) where U : T
         {
             if (onlyInjectExactlyInto && scope == Scope.Transient)
-                this.Kernel.Bind<T>().To<T>().WhenInjectedExactlyInto(whenInjectedInto).InTransientScope();
+                this.Kernel.Bind<T>().To<U>().WhenInjectedExactlyInto(whenInjectedInto).InTransientScope();
             else if (onlyInjectExactlyInto && scope == Scope.Singleton)
-                this.Kernel.Bind<T>().To<T>().WhenInjectedExactlyInto(whenInjectedInto).InSingletonScope();
+                this.Kernel.Bind<T>().To<U>().WhenInjectedExactlyInto(whenInjectedInto).InSingletonScope();
             else if (!onlyInjectExactlyInto && scope == Scope.Transient)
-                this.Kernel.Bind<T>().To<T>().WhenInjectedInto(whenInjectedInto).InTransientScope();
+                this.Kernel.Bind<T>().To<U>().WhenInjectedInto(whenInjectedInto).InTransientScope();
             else
-                this.Kernel.Bind<T>().To<T>().WhenInjectedInto(whenInjectedInto).InSingletonScope();
+                this.Kernel.Bind<T>().To<U>().WhenInjectedInto(whenInjectedInto).InSingletonScope();
         }
 
         #endregion
