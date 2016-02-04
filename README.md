@@ -3,6 +3,14 @@
 Represents an abstraction layer for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for dependency
 injection, without directly seeing the underlying API. This makes it very easy to switch between different IoC implementations.
 
+
+This project would not be possible without the great contributions of the open source community. The IoC Abstractions project was build using these awesome
+open source projects:
+
+**[Ninject](https://github.com/ninject/Ninject)** - Ninject is a lightning-fast, ultra-lightweight dependency injector for .NET applications. It helps you
+split your application into a collection of loosely-coupled, highly-cohesive pieces, and then glue them back together in a flexible manner. By using Ninject
+to support your software's architecture, your code will become easier to write, reuse, test, and modify.
+
 ## Using the Project
 
 Currently the project supports implementations for [Ninject](http://www.ninject.org/) and [Simple IoC](https://github.com/lecode-official/simple-ioc). The
