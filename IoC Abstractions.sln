@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{31FFDA25
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "System.InversionOfControl.Abstractions", "NuGet\System.InversionOfControl.Abstractions\System.InversionOfControl.Abstractions.nuproj", "{366862B9-DA82-45C6-9BC8-D70873731AE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.InversionOfControl.Abstractions.Ninject", "System.InversionOfControl.Abstractions.Ninject\System.InversionOfControl.Abstractions.Ninject.csproj", "{8F446642-33C8-41C2-9178-164765747408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{366862B9-DA82-45C6-9BC8-D70873731AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F446642-33C8-41C2-9178-164765747408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F446642-33C8-41C2-9178-164765747408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F446642-33C8-41C2-9178-164765747408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F446642-33C8-41C2-9178-164765747408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
