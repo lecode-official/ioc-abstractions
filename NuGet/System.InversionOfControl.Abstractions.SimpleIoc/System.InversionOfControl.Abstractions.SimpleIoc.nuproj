@@ -19,14 +19,13 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>System.InversionOfControl.Abstractions.SimpleIoc</Id>
-    <Version>0.1.0</Version>
+    <Version>0.1.2</Version>
     <Title>IoC Abstractions Implementation for Simple IoC</Title>
     <Authors>David Neumann &amp; Lukas Rögner</Authors>
     <Owners>David Neumann &amp; Lukas Rögner</Owners>
     <Summary>An IoC Abstractions Implementation for Simple IoC.</Summary>
     <Description>This is an implementation of the IoC Abstractions for Simple IoC. The IoC Abstractions represent an abstraction layer for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for dependency injection, without directly seeing the underlying API. This makes it very easy to switch between different IoC implementations.</Description>
-    <ReleaseNotes>
-    </ReleaseNotes>
+    <ReleaseNotes>Added the XML documentation, so that Intellisense provides more information to the user.</ReleaseNotes>
     <ProjectUrl>https://github.com/lecode-official/ioc-abstractions</ProjectUrl>
     <LicenseUrl>https://raw.githubusercontent.com/lecode-official/ioc-abstractions/master/LICENSE</LicenseUrl>
     <Copyright>Copyright 2016 © David Neumann &amp; Lukas Rögner</Copyright>
