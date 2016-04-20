@@ -38,7 +38,44 @@ will suffice, no extra plugins or tools are needed (except for the NuGet project
 packagea). Just clone the Git repository, open the solution in Visual Studio, and build the solution.
 
 ```batch
-git pull https://github.com/lecode-official/ioc-abstractions.git
+git clone https://github.com/lecode-official/ioc-abstractions
+```
+
+## Samples
+
+It is really simple to create a new IoC container. At first you have to choose an IoC implementation, currently Ninject and Simple IoC are supported. This is
+how you create a new Simple IoC or Ninject IoC container:
+
+```csharp
+IIocContainer ninjectIocContainer = new NinjectIocContainer();
+IIocContainer simpleIocContainer = new SimpleIocContainer();
+```
+
+Once you have obtained an IoC container, you can start to bind types to the IoC container:
+
+```csharp
+iocContainer.RegisterType<IVehicle, Car>();
+```
+
+You can also bind types only when they are injected into another type. In this instance, a `Motorcycle` is injected into a `Person` if the `Person` is a `SuperCoolPerson`:
+
+```csharp
+iocContainer.RegisterType<IVehicle, Motorcycle>(typeof(SuperCoolPerson)); // Obviously super cool people drive motorcycles!
+```
+
+Now you can use the IoC container to retrieve instances of the types:
+
+```csharp
+Person person = iocContainer.GetInstance<Person>();
+Person superCoolPerson = iocContainer.GetInstance<SuperCoolPerson>();
+```
+
+You will notice, when you evaluate these two statements, that `person` will get an instance `Car` inject, while the `superCoolPerson` will get an instance of `Motorcycle`
+injected. You can also pass arguments to the `GetInstance` method, which will be prioritzed when injecting values into the constructors. When you evaluate
+the following statement, you will see, that the `namedPerson` will get the `string` `"Bob"` injected as its name.
+
+```csharp
+Person namedPerson = iocContainer.GetInstance<NamedPerson>("Bob");
 ```
 
 ## Adding an Implementation
