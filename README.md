@@ -2,6 +2,8 @@
 
 ![IoC Abstractions Logo](https://github.com/lecode-official/ioc-abstractions/blob/master/Documentation/Images/Banner.png "IoC Abstractions Logo")
 
+> **IMPORTANT** This project is no longer actively in development.
+
 Represents an abstraction layer for multiple IoC containers. Using the abstractions, applications can use an inversion of control container for dependency
 injection, without directly seeing the underlying API. This makes it very easy to switch between different IoC implementations.
 
